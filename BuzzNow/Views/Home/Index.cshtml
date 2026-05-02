@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    ViewData["Today"] = DateTime.Now;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>E-Sports <a href="https://learn.microsoft.com/aspnet/core">Your ultimate sports and entertainment arena </a>.</p>
+</div>
+
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-9">
+                <div class="text-bg-dark p-3 mb-2 w-50 rounded">
+                    <small class="text-uppercase">news page: @ViewData["Today"]</small>
+                </div>
+                <div class="text-bg-dark p-3 mb-3 w-75 rounded">
+                    <small class="text-uppercase">popular news: world cup</small>
+                </div>
+                <div class="card w-100">
+                    @* <h2 class="text-uppercase">special event</h2>
+                    <p>Don't miss out on our exclusive coverage of the latest sports events, bringing you the most thrilling moments and in-depth analysis.</p> *@
+                    <img src="~/images/buzznow-logo-main.png" class="card-img-top" alt="Popular News Image">
+                    <div class="card-body text-bg-dark">
+                        <small class="text-uppercase">world cup 2026</small>
+                        <h2 class="text-uppercase">world cup 2026 kicks off this fall</h2>
+                        <ul class="breadcrumb">
+                        <li class="breadcrumb-item">Home</li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">June 11, 2026</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)" class="text-decoration-none">Football</a></li>
+                    </ul>
+                        <p>2026 world cup kicks off with Mexico vs South Africa as the tournament opener.</p>
+                    </div>
+                </div>
+                <div class="mt-2 p-3 text-bg-dark rounded">
+                    <div class="row">
+                        <div class="col">
+                            <div class="ratio ratio-4x3">
+                                <iframe class="rounded" src="https://player.pbs.org/viralplayer/3059605297/" allowfullscreen allow="encrypted-media"></iframe>
+                            </div>
+                        @* <div class="pbs-viral-player-wrapper" style="position: relative; padding-top: calc(56.25% + 43px);"><iframe src="https://player.pbs.org/viralplayer/3059605297/" allowfullscreen allow="encrypted-media" style="position: absolute; top: 0; width: 100%; height: 100%; border: 0;"></iframe></div> *@
+                        </div>
+                        <div class="col">
+                           <small class="text-uppercase">documentary</small>
+                           <h3>Muhammad Ali in his prime</h3>
+                           <p>Muhammad Ali brings to life one of the most indelible figures of the 20th century, a three-time heavyweight boxing champion who captivated millions of fans across the world with his mesmerizing combination of speed, grace, and power in the ring, and charm and playful boasting outside of it. Ali insisted on being himself unconditionally and became a global icon and inspiration to people everywhere.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-bg-dark mt-2 p-3 rounded">
+                    <div class="row">
+                        <div class="col">
+                            <img src="~/images/i_worldcup.jpg" class="img-thumbnail h-100" />
+                        </div>
+                        <div class="col">
+                            <small class="text-uppercase">espn</small>
+                            <h3>England release 2026 World Cup kits: 'New era for the Three Lions'</h3>
+                            <p>England have released their latest home and away kits ahead of the 2026 World Cup in a launch that they have said signifies "a new era for The Three Lions."</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-3">
+            <div class="text-bg-dark p-3">
+                <small class="text-uppercase">search news</small>
+            </div>
+            <div class="input-group mt-3 mb-3">
+                <input type="text" class="form-control" placeholder="Search news..." aria-label="Search news" aria-describedby="button-search">
+                <button class="btn btn-outline-secondary" type="button" id="button-search">Search</button>
+            </div>
+            <div class="text-bg-dark mb-3 p-3">
+                <small class="text-uppercase">social media</small>
+                <div class="row mt-3">
+                    <div class="col">
+                        <a class="btn btn-outline-secondary"><i class="bi bi-twitter"></i> Twitter</a>
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-outline-secondary"><i class="bi bi-google"></i> Google</a>
+                    </div>
+                </div>
+               <div class="row mt-2">
+                   <div class="col">
+                        <a class="btn btn-outline-secondary"><i class="bi bi-facebook"></i> Facebook</a>
+                   </div>
+                   <div class="col">
+                        <a class="btn btn-outline-secondary"><i class="bi bi-youtube"></i> Youtube</a>
+                   </div>
+               </div>
+               <div class="row mt-2">
+                   <div class="col">
+                        <a class="btn btn-outline-secondary"><i class="bi bi-instagram"></i> Instagram</a>
+                   </div>
+                   <div class="col">
+                     <a class="btn btn-outline-secondary"><i class="bi bi-rss"></i> RSS Feed</a>
+                    </div>
+               </div>
+            </div>
+            <div class="text-bg-dark p-3">
+                <small class="text-uppercase">games survey</small>
+            </div>
+            <div class="card mt-3">
+                    <div class="card-body text-bg-dark">
+                        <h5 class="card-title" accesskey="">Which games of the world cup are you more concerned about?</h5>
+                        <small>Top teams to qualify from group stages</small>
+                        <div class="progress">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 30%">30%</div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gameSurvey" id="option1" value="option1">
+                            <label class="form-check-label" for="option1">
+                                Football
+                            </label>
+                        </div>
+                        <div class="form-check"accesskey="0">
+                        <input class="form-check-input" type="radio" name="gameSurvey" id="option2" value="option2">
+                        <label class="form-check-label" for="option2">
+                            Basketball
+                        </label>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </div>
+</div>
