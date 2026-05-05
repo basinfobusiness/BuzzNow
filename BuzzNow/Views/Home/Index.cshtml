@@ -2,15 +2,54 @@
     ViewData["Title"] = "Home Page";
     ViewData["Today"] = DateTime.Now;
 }
+<ul class="nav nav-pills">
+    <li class="nav-item dropdown">
+        <a class="nav-link text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">football</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item text-capitalize">international friendlies</a></li>
+            <li><a class="dropdown-item text-capitalize">worldcup</a></li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">basketball</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item">NBA</a></li>
+            <li><a class="dropdown-item">NCAA Division 1 National Championship</a></li>
+            <li><a class="dropdown-item">KBL</a></li>
+        </ul>
+    </li>
+    <li class="nav-item"><a class="nav-link text-uppercase">baseball</a></li>
+    <li class="nav-item"><a class="nav-link text-uppercase">tennis</a></li>
+    <li class="nav-item"><a class="nav-link text-uppercase">soccer</a></li>
+    <li class="nav-item"><a class="nav-link text-uppercase">golf</a></li>
+    <li class="nav-item"><a class="nav-link text-uppercase">hockey</a></li>
+    <li class="nav-item dropdown">
+        <a class="nav-link text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">mma</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">UFC Fight Night</a></li>
+        </ul>
+    </li>
+    <li class="nav-item"><a class="nav-link text-uppercase">boxing</a></li>
+    <li class="nav-item"><a class="nav-link text-uppercase active">esports</a></li>
+</ul>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>E-Sports <a href="https://learn.microsoft.com/aspnet/core">Your ultimate sports and entertainment arena </a>.</p>
+<div>
+    <div class="alert alert-info mt-3 alert-dismissible fade show" role="alert">
+        <h4 class="alert-heading">Latest News</h4>
+        <p>Stay updated with the latest news and updates in the world of sports. From thrilling match highlights to exclusive interviews, we've got you covered.</p>
+        <button accesskey="$" type="button" class="btn-close" aria-label="Close" data-bs-dismiss="alert"></button>
+    </div>
+</div>
+<div class="container">
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>E-Sports <a href="https://learn.microsoft.com/aspnet/core">Your ultimate sports and entertainment arena </a>.</p>
+    </div>
 </div>
 
 <div class="container mb-5">
     <div class="row">
-        <div class="col-9">
+        <div class="col-sm-9 col-md-9 col-lg-9">
                 <div class="text-bg-dark p-3 mb-2 w-50 rounded">
                     <small class="text-uppercase">news page: @ViewData["Today"]</small>
                 </div>
@@ -60,7 +99,7 @@
                     </div>
                 </div>
         </div>
-        <div class="col-3">
+        <div class="col-sm-3 col col-lg-9">
             <div class="text-bg-dark p-3">
                 <small class="text-uppercase">search news</small>
             </div>
@@ -129,5 +168,37 @@
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item"><a class="page-link" href="#">Next</a></li>
         </ul>
+    </div>
+</div>
+
+<div class="text-bg-dark p-3">
+    <div class="row">
+        <div class="col">
+            <h6>BuzzNow</h6>
+            <p>Your ultimate sports and entertainment arena.</p>
+            <p class="text-capitalize">our newsletter</p>
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-subscribe">
+                <button class="btn btn-outline-secondary" type="button"><i class="bi bi-send"></i></button>
+            </div>
+        </div>
+        <div class="col">
+            <h6>Popular News</h6>
+            <div class="row">
+                <div class="col">
+                    <img src="~/images//BUZZNOW-FOOTER-1.png" alt="hockey" class="img-thumbnail h-75" title="hockey club" />
+                </div>
+                <div class="col">
+                    <h6>Hockey</h6>
+                    <p>2026 Stanley Cup Finals: A thrilling showdown between the Colorado Avalanche and the Florida Panthers.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h6>Other News</h6>
+        </div>
+        <div class="col">
+            <h6>Twitter</h6>
+        </div>
     </div>
 </div>

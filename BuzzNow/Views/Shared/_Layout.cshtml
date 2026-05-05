@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="auto">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,74 +36,10 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container-fluid">
         <main role="main" class="pb-3">
-            <ul class="nav nav-pills">
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">football</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item text-capitalize">international friendlies</a></li>
-                        <li><a class="dropdown-item text-capitalize">worldcup</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">basketball</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item">NBA</a></li>
-                        <li><a class="dropdown-item">NCAA Division 1 National Championship</a></li>
-                        <li><a class="dropdown-item">KBL</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link text-uppercase">baseball</a></li>
-                <li class="nav-item"><a class="nav-link text-uppercase">tennis</a></li>
-                <li class="nav-item"><a class="nav-link text-uppercase">soccer</a></li>
-                <li class="nav-item"><a class="nav-link text-uppercase">golf</a></li>
-                <li class="nav-item"><a class="nav-link text-uppercase">hockey</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">mma</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">UFC Fight Night</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link text-uppercase">boxing</a></li>
-                <li class="nav-item"><a class="nav-link text-uppercase active">esports</a></li>
-            </ul>
             @RenderBody()
         </main>
-    </div>
-
-    <div class="container-fluid">
-       <div class="text-bg-dark p-3">
-            <div class="row">
-                <div class="col">
-                    <h6>BuzzNow</h6>
-                    <p>Your ultimate sports and entertainment arena.</p>
-                    <p class="text-capitalize">our newsletter</p>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-subscribe">
-                        <button class="btn btn-outline-secondary" type="button"><i class="bi bi-send"></i></button>
-                    </div>
-                </div>
-                <div class="col">
-                    <h6>Popular News</h6>
-                    <div class="row">
-                        <div class="col">
-                            <img src="~/images//BUZZNOW-FOOTER-1.png" alt="hockey" class="img-thumbnail h-75" title="hockey club" />
-                        </div>
-                        <div class="col">
-                            <h6>Hockey</h6>
-                            <p>2026 Stanley Cup Finals: A thrilling showdown between the Colorado Avalanche and the Florida Panthers.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <h6>Other News</h6>
-                </div>
-                <div class="col">
-                    <h6>Twitter</h6>
-                </div>
-            </div>
-       </div>
     </div>
 
     <footer class="border-top footer text-muted">
