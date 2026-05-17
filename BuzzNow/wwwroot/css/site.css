@@ -19,8 +19,21 @@ html {
 
 body {
   margin-bottom: 60px;
-  background-color: #eee;
+/*  background-color: rgb(9,15,20);*/
   user-select: none;
+}
+
+.container-background {
+/*    background-color: rgb(19,35,45);*/
+  background-color: rgb(0,0,0);
+  color: white;
+  border-left: 3px solid lightblue;
+}
+
+#navbar-category{
+    margin: 0px;
+    background-color: black;
+    color: white;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {

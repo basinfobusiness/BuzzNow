@@ -1,39 +1,66 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
     ViewData["Today"] = DateTime.Now;
+    // ViewData["Myday"] = DateTime.UtcNow;
 }
-<ul class="nav nav-pills">
-    <li class="nav-item dropdown">
-        <a class="nav-link text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">football</a>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item text-capitalize">international friendlies</a></li>
-            <li><a class="dropdown-item text-capitalize">worldcup</a></li>
-        </ul>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">basketball</a>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item">NBA</a></li>
-            <li><a class="dropdown-item">NCAA Division 1 National Championship</a></li>
-            <li><a class="dropdown-item">KBL</a></li>
-        </ul>
-    </li>
-    <li class="nav-item"><a class="nav-link text-uppercase">baseball</a></li>
-    <li class="nav-item"><a class="nav-link text-uppercase">tennis</a></li>
-    <li class="nav-item"><a class="nav-link text-uppercase">soccer</a></li>
-    <li class="nav-item"><a class="nav-link text-uppercase">golf</a></li>
-    <li class="nav-item"><a class="nav-link text-uppercase">hockey</a></li>
-    <li class="nav-item dropdown">
-        <a class="nav-link text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">mma</a>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">UFC Fight Night</a></li>
-        </ul>
-    </li>
-    <li class="nav-item"><a class="nav-link text-uppercase">boxing</a></li>
-    <li class="nav-item"><a class="nav-link text-uppercase active">esports</a></li>
-</ul>
 
-<div>
+@* @section CarouselPromo { *@
+    <div class="carousel slide ms-0 me-0" data-bs-ride="carousel" id="promo-carousel">
+        <div class="carousel-indicators">
+            <button class="active" data-bs-slide-to="0" data-bs-target="#promo-carousel" type="button"></button>
+            <button data-bs-slide-to="1" type="button" data-bs-target="#promo-carousel"></button>
+            <button data-bs-slide-to="2" data-bs-target="#promo-carousel" type="button"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/main_carousel_1.png" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+                <img src="/images/main_carousel_2.png" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+                <img src="/images/main_carousel_3.png" class="d-block w-100" />
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#promo-carousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#promo-carousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+@* } *@
+
+<div class="container mt-3">
+    <ul class="nav nav-pills">
+        <li class="nav-item dropdown">
+            <a class="nav-link text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">football</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-capitalize">international friendlies</a></li>
+                <li><a class="dropdown-item text-capitalize">worldcup</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">basketball</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item">NBA</a></li>
+                <li><a class="dropdown-item">NCAA Division 1 National Championship</a></li>
+                <li><a class="dropdown-item">KBL</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-uppercase">baseball</a></li>
+        <li class="nav-item"><a class="nav-link text-uppercase">tennis</a></li>
+        <li class="nav-item"><a class="nav-link text-uppercase">soccer</a></li>
+        <li class="nav-item"><a class="nav-link text-uppercase">golf</a></li>
+        <li class="nav-item"><a class="nav-link text-uppercase">hockey</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link text-uppercase dropdown-toggle" href="#" data-bs-toggle="dropdown">mma</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">UFC Fight Night</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-uppercase">boxing</a></li>
+        <li class="nav-item"><a class="nav-link text-uppercase active">esports</a></li>
+    </ul>
+</div>
+
+<div class="container-fluid">
     <div class="alert alert-info mt-3 alert-dismissible fade show" role="alert">
         <h4 class="alert-heading">Latest News</h4>
         <p>Stay updated with the latest news and updates in the world of sports. From thrilling match highlights to exclusive interviews, we've got you covered.</p>
@@ -43,17 +70,32 @@
 <div class="container">
     <div class="text-center">
         <h1 class="display-4">Welcome</h1>
-        <p>E-Sports <a href="https://learn.microsoft.com/aspnet/core">Your ultimate sports and entertainment arena </a>.</p>
+        <p>E-Sports <a href="#">Your ultimate sports and entertainment arena </a>.</p>
+    </div>
+</div>
+
+<div class="container mb-2">
+    <div class="container-background w-50 rrounded p-3 mb-2">
+        <small class="text-uppercase">feed: @ViewData["Today"]</small>
+    </div>
+    <div class="row">
+        <div class="col-9">
+            <div class="container-background p-3 mb-2 w-50 rounded">
+                <h2 class="text-uppercase">news page</h2>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="container-background p-3">
+                <small class="text-uppercase">search news</small>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="container mb-5">
     <div class="row">
         <div class="col-sm-9 col-md-9 col-lg-9">
-                <div class="text-bg-dark p-3 mb-2 w-50 rounded">
-                    <small class="text-uppercase">news page: @ViewData["Today"]</small>
-                </div>
-                <div class="text-bg-dark p-3 mb-3 w-75 rounded">
+                <div class="container-background p-3 mb-3 w-75 rounded">
                     <small class="text-uppercase">popular news: world cup</small>
                 </div>
                 <div class="card w-100">
@@ -99,16 +141,18 @@
                     </div>
                 </div>
         </div>
-        <div class="col-sm-3 col col-lg-9">
-            <div class="text-bg-dark p-3">
+        <div class="col-sm-3 col col-lg-3">
+            @* <div class="text-bg-dark p-3">
                 <small class="text-uppercase">search news</small>
-            </div>
+            </div> *@
             <div class="input-group mt-3 mb-3">
                 <input type="text" class="form-control" placeholder="Search news..." aria-label="Search news" aria-describedby="button-search">
-                <button class="btn btn-outline-secondary" type="button" id="button-search">Search</button>
+                <button class="btn btn-outline-info" type="button" id="button-search">Search</button>
             </div>
-            <div class="text-bg-dark mb-3 p-3">
+            <div class="mb-2 container-background p-3">
                 <small class="text-uppercase">social media</small>
+            </div>
+            <div class="mb-3 p-3">
                 <div class="row mt-3">
                     <div class="col">
                         <a class="btn btn-outline-secondary"><i class="bi bi-twitter"></i> Twitter</a>
