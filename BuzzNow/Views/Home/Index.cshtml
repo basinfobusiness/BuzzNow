@@ -75,12 +75,12 @@
 </div>
 
 <div class="container mb-2">
-    <div class="container-background w-50 rrounded p-3 mb-2">
+    <div class="container-background w-50 p-3 mb-2">
         <small class="text-uppercase">feed: @ViewData["Today"]</small>
     </div>
     <div class="row">
         <div class="col-9">
-            <div class="container-background p-3 mb-2 w-50 rounded">
+            <div class="container-background p-3 mb-2 w-50">
                 <h2 class="text-uppercase">news page</h2>
             </div>
         </div>
@@ -95,7 +95,7 @@
 <div class="container mb-5">
     <div class="row">
         <div class="col-sm-9 col-md-9 col-lg-9">
-                <div class="container-background p-3 mb-3 w-75 rounded">
+                <div class="container-background p-3 mb-3 w-75">
                     <small class="text-uppercase">popular news: world cup</small>
                 </div>
                 <div class="card">
@@ -113,7 +113,7 @@
                         <p>2026 world cup kicks off with Mexico vs South Africa as the tournament opener.</p>
                     </div>
                 </div>
-                <div class="mt-2 p-3 text-bg-dark rounded">
+                <div class="mt-2 p-3 container-bg rounded">
                     <div class="row">
                         <div class="col">
                             <div class="ratio ratio-4x3">
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-bg-dark mt-2 p-3 rounded">
+                <div class="container-bg mt-2 p-3 rounded">
                     <div class="row">
                         <div class="col">
                             <img src="~/images/i_worldcup.jpg" class="img-thumbnail h-100" />
@@ -178,30 +178,30 @@
                     </div>
                </div>
             </div>
-            <div class="text-bg-dark p-3">
+            <div class="container-background p-3">
                 <small class="text-uppercase">games survey</small>
             </div>
-            <div class="card mt-3">
-                    <div class="card-body text-bg-dark">
-                        <h5 class="card-title" accesskey="">Which games of the world cup are you more concerned about?</h5>
-                        <small>Top teams to qualify from group stages</small>
-                        <div class="progress">
-                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 30%">30%</div>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gameSurvey" id="option1" value="option1">
-                            <label class="form-check-label" for="option1">
-                                Football
-                            </label>
-                        </div>
-                        <div class="form-check"accesskey="0">
+            <div class="card container-bg mt-3">
+                <div class="card-body">
+                    <h5 class="card-title" accesskey="">Which games of the world cup are you more concerned about?</h5>
+                    <small>Top teams to qualify from group stages</small>
+                    <div class="progress">
+                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 30%">30%</div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gameSurvey" id="option1" value="option1">
+                        <label class="form-check-label" for="option1">
+                            Football
+                        </label>
+                    </div>
+                    <div class="form-check" accesskey="0">
                         <input class="form-check-input" type="radio" name="gameSurvey" id="option2" value="option2">
                         <label class="form-check-label" for="option2">
                             Basketball
                         </label>
                     </div>
-                    </div>
                 </div>
+            </div>
         </div>
     </div>
     <div class="d-flex justify-content-center mt-5">
@@ -215,34 +215,34 @@
     </div>
 </div>
 
-<div class="text-bg-dark p-3">
+<div class="container-bg p-3">
     <div class="row">
-        <div class="col">
-            <h6>BuzzNow</h6>
-            <p>Your ultimate sports and entertainment arena.</p>
-            <p class="text-capitalize">our newsletter</p>
-            <div class="input-group">
-                <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-subscribe">
-                <button class="btn btn-outline-secondary" type="button"><i class="bi bi-send"></i></button>
-            </div>
-        </div>
-        <div class="col">
-            <h6>Popular News</h6>
-            <div class="row">
-                <div class="col">
-                    <img src="~/images//BUZZNOW-FOOTER-1.png" alt="hockey" class="img-thumbnail h-75" title="hockey club" />
-                </div>
-                <div class="col">
-                    <h6>Hockey</h6>
-                    <p>2026 Stanley Cup Finals: A thrilling showdown between the Colorado Avalanche and the Florida Panthers.</p>
+            <div class="col">
+                <h6>BuzzNow</h6>
+                <p>Your ultimate sports and entertainment arena.</p>
+                <p class="text-capitalize">our newsletter</p>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-subscribe">
+                    <button class="btn btn-outline-secondary" type="button"><i class="bi bi-send"></i></button>
                 </div>
             </div>
+            <div class="col">
+                <h6>Popular News</h6>
+                <div class="row">
+                    <div class="col">
+                        <img src="~/images//BUZZNOW-FOOTER-1.png" alt="hockey" class="img-thumbnail h-75" title="hockey club" />
+                    </div>
+                    <div class="col">
+                        <h6>Hockey</h6>
+                        <p>2026 Stanley Cup Finals: A thrilling showdown between the Colorado Avalanche and the Florida Panthers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h6>Other News</h6>
+            </div>
+            <div class="col">
+                <h6>Twitter</h6>
+            </div>
         </div>
-        <div class="col">
-            <h6>Other News</h6>
-        </div>
-        <div class="col">
-            <h6>Twitter</h6>
-        </div>
-    </div>
 </div>
